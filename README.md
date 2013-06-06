@@ -25,6 +25,18 @@ passing it the columns that you wish to repair.
 Each time the record is saved, those columns will run through a parser (or, "mechanic")
 that will repair the invalid HTML.
 
+# Example
+
+Let's say a user enters the following HTML into a textarea and saves it.
+
+    <div><p>This is my <strong>HTML</div>
+
+If the Markup Mechanic is involved, here's what will get saved:
+
+    <div><p>This is my <strong>HTML</strong></p></div>
+
+You never can be too safe when humans are involved!
+
 # Custom Mechanic Adapters
 
 Under the hood, we're really just relying on the amazing Nokogiri library to do
