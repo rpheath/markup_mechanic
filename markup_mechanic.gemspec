@@ -21,11 +21,25 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = %w[README LICENSE]
 
   s.add_dependency("nokogiri", ["~> 1.5"])
-  s.add_development_dependency("mocha", ["~> 0.10"])
 
   # = MANIFEST =
   s.files = %w[
-
+    Gemfile
+    LICENSE
+    README.md
+    Rakefile
+    lib/markup_mechanic.rb
+    lib/markup_mechanic/active_record.rb
+    lib/markup_mechanic/base.rb
+    lib/markup_mechanic/callbacks.rb
+    lib/markup_mechanic/callbacks/before_save.rb
+    lib/markup_mechanic/configuration.rb
+    lib/markup_mechanic/default_adapter.rb
+    lib/markup_mechanic/error.rb
+    lib/markup_mechanic/version.rb
+    markup_mechanic.gemspec
+    test/markup_mechanic_test.rb
+    test/test_helper.rb
   ]
   # = MANIFEST =
 
